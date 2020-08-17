@@ -1,7 +1,6 @@
 package luhn
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -9,8 +8,6 @@ func TestValid(t *testing.T) {
 	for _, test := range testCases {
 		if ok := Valid(test.input); ok != test.ok {
 			t.Fatalf("Valid(%s): %s\n\t Expected: %t\n\t Got: %t", test.input, test.description, test.ok, ok)
-		} else {
-			fmt.Printf("Valid(%s): %s\n\t Expected: %t\n\t Got: %t\n", test.input, test.description, test.ok, ok)
 		}
 	}
 }

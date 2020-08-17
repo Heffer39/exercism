@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="17308512-744c-4cf9-93a2-0b890dc41579" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../pythagorean-triplet/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythagorean-triplet/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythagorean-triplet/pythagorean_triplet.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythagorean-triplet/pythagorean_triplet_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../anagram/anagram.go" beforeDir="false" afterPath="$PROJECT_DIR$/../anagram/anagram.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luhn.go" beforeDir="false" afterPath="$PROJECT_DIR$/luhn.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luhn_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/luhn_test.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="$USER_HOME$/go/go1.14.4" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1g0bTwtZHb7dhKJXtSQmdwY93B0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GO_FMT" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bob" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="go test luhn" type="GoTestRunConfiguration" factoryName="Go Test" nameIsGenerated="true">
+      <module name="luhn" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="17308512-744c-4cf9-93a2-0b890dc41579" name="Default Changelist" comment="" />
+      <created>1597254468389</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597254468389</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Luhn Formula">
+      <created>1597415776548</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597415776548</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Luhn Formula" />
+    <option name="LAST_COMMIT_MESSAGE" value="Luhn Formula" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="844" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597255243942">
+      <screen x="0" y="27" width="1920" height="773" />
+    </state>
+    <state x="844" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.773@0.27.1920.773" timestamp="1597255243942" />
+    <state x="1168" y="161" width="424" height="495" key="FileChooserDialogImpl" timestamp="1597684846295">
+      <screen x="0" y="27" width="1920" height="773" />
+    </state>
+    <state x="1168" y="161" width="424" height="495" key="FileChooserDialogImpl/0.27.1920.773@0.27.1920.773" timestamp="1597684846295" />
+    <state width="906" height="181" key="GridCell.Tab.0.bottom" timestamp="1597684847413">
+      <screen x="0" y="27" width="1920" height="773" />
+    </state>
+    <state width="906" height="181" key="GridCell.Tab.0.bottom/0.27.1920.773@0.27.1920.773" timestamp="1597684847413" />
+    <state width="906" height="181" key="GridCell.Tab.0.center" timestamp="1597684847412">
+      <screen x="0" y="27" width="1920" height="773" />
+    </state>
+    <state width="906" height="181" key="GridCell.Tab.0.center/0.27.1920.773@0.27.1920.773" timestamp="1597684847412" />
+    <state width="906" height="181" key="GridCell.Tab.0.left" timestamp="1597684847412">
+      <screen x="0" y="27" width="1920" height="773" />
+    </state>
+    <state width="906" height="181" key="GridCell.Tab.0.left/0.27.1920.773@0.27.1920.773" timestamp="1597684847412" />
+    <state width="906" height="181" key="GridCell.Tab.0.right" timestamp="1597684847413">
+      <screen x="0" y="27" width="1920" height="773" />
+    </state>
+    <state width="906" height="181" key="GridCell.Tab.0.right/0.27.1920.773@0.27.1920.773" timestamp="1597684847413" />
+    <state x="934" y="50" width="986" height="741" key="SettingsEditor" timestamp="1597257881392">
+      <screen x="0" y="27" width="1920" height="773" />
+    </state>
+    <state x="934" y="50" width="986" height="741" key="SettingsEditor/0.27.1920.773@0.27.1920.773" timestamp="1597257881392" />
+    <state x="1036" y="151" width="800" height="539" key="Vcs.Push.Dialog.v2" timestamp="1597415808204">
+      <screen x="0" y="27" width="1920" height="773" />
+    </state>
+    <state x="1036" y="151" width="800" height="539" key="Vcs.Push.Dialog.v2/0.27.1920.773@0.27.1920.773" timestamp="1597415808204" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/luhn$go_test_luhn.out" NAME="go test luhn Coverage Results" MODIFIED="1597669317094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
