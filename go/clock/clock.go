@@ -10,15 +10,14 @@ type Clock struct {
 	minutes int
 }
 
-const minutesInOneDay int = 60 * 24
-
 // New acts as the constructor for the Clock struct
 func New(hour, minute int) Clock {
-	c := &Clock{(hour*60 + minute) % minutesInOneDay}
-	if c.minutes < 0 {
-		c.minutes += minutesInOneDay
+	minute += hour * 60
+	minute %= 24 * 60
+	if minute < 0 {
+		minute += 24 * 60
 	}
-	return *c
+	return Clock{minute}
 }
 
 // Add takes a clock and adds minutes to it
