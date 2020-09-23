@@ -16,7 +16,7 @@ func Frequency(s string) FreqMap {
 // ConcurrentFrequency uses goroutines to make concurrent calls to the Frequency function
 // for each of the strings in the []string parameter and returns one combined FreqMap.
 func ConcurrentFrequency(texts []string) FreqMap {
-	c := make(chan FreqMap)
+	c := make(chan FreqMap, 10)
 	combinedFreq := FreqMap{}
 
 	for _, s := range texts {
