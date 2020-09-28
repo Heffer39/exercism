@@ -79,6 +79,21 @@
       <option name="presentableId" value="Default" />
       <updated>1600950981003</updated>
     </task>
+    <task id="LOCAL-00001" summary="Tree Building first submission">
+      <created>1601064218494</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601064218494</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Condensed errors into one statement">
+      <created>1601302228022</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601302228022</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,6 +111,11 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Tree Building first submission" />
+    <MESSAGE value="Condensed errors into one statement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Condensed errors into one statement" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
@@ -108,22 +128,22 @@
       <screen x="0" y="27" width="1920" height="773" />
     </state>
     <state x="1224" y="173" width="424" height="495" key="FileChooserDialogImpl/0.27.1920.773@0.27.1920.773" timestamp="1600951189825" />
-    <state width="1862" height="178" key="GridCell.Tab.0.bottom" timestamp="1601064149711">
+    <state width="906" height="178" key="GridCell.Tab.0.bottom" timestamp="1601314531050">
       <screen x="0" y="27" width="1920" height="773" />
     </state>
-    <state width="1862" height="178" key="GridCell.Tab.0.bottom/0.27.1920.773@0.27.1920.773" timestamp="1601064149711" />
-    <state width="1862" height="178" key="GridCell.Tab.0.center" timestamp="1601064149710">
+    <state width="906" height="178" key="GridCell.Tab.0.bottom/0.27.1920.773@0.27.1920.773" timestamp="1601314531050" />
+    <state width="906" height="178" key="GridCell.Tab.0.center" timestamp="1601314531050">
       <screen x="0" y="27" width="1920" height="773" />
     </state>
-    <state width="1862" height="178" key="GridCell.Tab.0.center/0.27.1920.773@0.27.1920.773" timestamp="1601064149710" />
-    <state width="1862" height="178" key="GridCell.Tab.0.left" timestamp="1601064149710">
+    <state width="906" height="178" key="GridCell.Tab.0.center/0.27.1920.773@0.27.1920.773" timestamp="1601314531050" />
+    <state width="906" height="178" key="GridCell.Tab.0.left" timestamp="1601314531050">
       <screen x="0" y="27" width="1920" height="773" />
     </state>
-    <state width="1862" height="178" key="GridCell.Tab.0.left/0.27.1920.773@0.27.1920.773" timestamp="1601064149710" />
-    <state width="1862" height="178" key="GridCell.Tab.0.right" timestamp="1601064149711">
+    <state width="906" height="178" key="GridCell.Tab.0.left/0.27.1920.773@0.27.1920.773" timestamp="1601314531050" />
+    <state width="906" height="178" key="GridCell.Tab.0.right" timestamp="1601314531050">
       <screen x="0" y="27" width="1920" height="773" />
     </state>
-    <state width="1862" height="178" key="GridCell.Tab.0.right/0.27.1920.773@0.27.1920.773" timestamp="1601064149711" />
+    <state width="906" height="178" key="GridCell.Tab.0.right/0.27.1920.773@0.27.1920.773" timestamp="1601314531050" />
     <state x="1024" y="161" width="824" height="519" key="IDE.errors.dialog" timestamp="1601043559135">
       <screen x="0" y="27" width="1920" height="773" />
     </state>

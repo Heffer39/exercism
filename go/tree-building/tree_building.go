@@ -27,12 +27,8 @@ func Build(records []Record) (*Node, error) {
 	})
 
 	for i, r := range records {
-		if r.Parent > r.ID {
-			return nil, errors.New("parent ID can not be lower than the record ID")
-		} else if r.ID != i {
-			return nil, errors.New("record is not in sequential order")
-		} else if r.ID > 0 && r.Parent == r.ID {
-			return nil, errors.New("record cannot reference itself as a parent")
+		if r.ID != i || r.Parent > r.ID || r.ID > 0 && r.Parent == r.ID {
+			return nil, errors.New("invalid record")
 		}
 		nodeMap[r.ID] = &Node{ID: r.ID}
 		if i != 0 {
