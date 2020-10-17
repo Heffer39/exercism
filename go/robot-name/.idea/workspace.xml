@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5ef18c68-f87a-4cc0-ad14-897534385c61" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="$USER_HOME$/go/go1.15.2" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1i9Zy7yJV3rFRCauHsnVBWpYjyh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="go test robot-name" type="GoTestRunConfiguration" factoryName="Go Test" nameIsGenerated="true">
+      <module name="robot-name" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <package value="robotname" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5ef18c68-f87a-4cc0-ad14-897534385c61" name="Default Changelist" comment="" />
+      <created>1601322019145</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601322019145</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Initial attempt&#10;&#10;Not first submission. Passes default tests. Does not pass bonus tests.">
+      <created>1601588255648</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601588255648</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial submission&#10;&#10;Rework required to pass bonus_test.go tests.&#10;Benchmark tests no longer work.">
+      <created>1601589855769</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601589855769</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Condensed errors into one statement">
+      <created>1602963004876</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602963004876</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Initial solution">
+      <created>1602963113929</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602963113929</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="Initial attempt&#10;&#10;Not first submission. Passes default tests. Does not pass bonus tests." />
+    <MESSAGE value="Initial submission&#10;&#10;Rework required to pass bonus_test.go tests.&#10;Benchmark tests no longer work." />
+    <MESSAGE value="Condensed errors into one statement" />
+    <MESSAGE value="Initial solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial solution" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1236" y="252" width="400" height="338" key="#Go_Modules" timestamp="1601322028407">
+      <screen x="0" y="27" width="1920" height="773" />
+    </state>
+    <state x="1236" y="252" width="400" height="338" key="#Go_Modules/0.27.1920.773@0.27.1920.773" timestamp="1601322028407" />
+    <state x="844" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601322758999">
+      <screen x="0" y="27" width="1920" height="773" />
+    </state>
+    <state x="844" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.773@0.27.1920.773" timestamp="1601322758999" />
+    <state x="746" y="173" width="424" height="495" key="FileChooserDialogImpl" timestamp="1601587186950">
+      <screen x="0" y="27" width="1920" height="773" />
+    </state>
+    <state x="746" y="173" width="424" height="495" key="FileChooserDialogImpl/0.27.1920.773@0.27.1920.773" timestamp="1601587186950" />
+    <state width="906" height="177" key="GridCell.Tab.0.bottom" timestamp="1602962871567">
+      <screen x="0" y="27" width="1920" height="773" />
+    </state>
+    <state width="906" height="177" key="GridCell.Tab.0.bottom/0.27.1920.773@0.27.1920.773" timestamp="1602962871567" />
+    <state width="906" height="177" key="GridCell.Tab.0.center" timestamp="1602962871567">
+      <screen x="0" y="27" width="1920" height="773" />
+    </state>
+    <state width="906" height="177" key="GridCell.Tab.0.center/0.27.1920.773@0.27.1920.773" timestamp="1602962871567" />
+    <state width="906" height="177" key="GridCell.Tab.0.left" timestamp="1602962871567">
+      <screen x="0" y="27" width="1920" height="773" />
+    </state>
+    <state width="906" height="177" key="GridCell.Tab.0.left/0.27.1920.773@0.27.1920.773" timestamp="1602962871567" />
+    <state width="906" height="177" key="GridCell.Tab.0.right" timestamp="1602962871567">
+      <screen x="0" y="27" width="1920" height="773" />
+    </state>
+    <state width="906" height="177" key="GridCell.Tab.0.right/0.27.1920.773@0.27.1920.773" timestamp="1602962871567" />
+    <state x="934" y="42" width="986" height="741" key="SettingsEditor" timestamp="1602962838228">
+      <screen x="0" y="27" width="1920" height="773" />
+    </state>
+    <state x="934" y="42" width="986" height="741" key="SettingsEditor/0.27.1920.773@0.27.1920.773" timestamp="1602962838228" />
+    <state x="558" y="151" width="800" height="539" key="Vcs.Push.Dialog.v2" timestamp="1602962147125">
+      <screen x="0" y="27" width="1920" height="773" />
+    </state>
+    <state x="558" y="151" width="800" height="539" key="Vcs.Push.Dialog.v2/0.27.1920.773@0.27.1920.773" timestamp="1602962147125" />
+    <state x="964" y="31" width="948" height="761" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1602963147328">
+      <screen x="0" y="27" width="1920" height="773" />
+    </state>
+    <state x="964" y="31" width="948" height="761" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.27.1920.773@0.27.1920.773" timestamp="1602963147328" />
+    <state x="1101" y="121" width="672" height="678" key="search.everywhere.popup" timestamp="1601323360615">
+      <screen x="0" y="27" width="1920" height="773" />
+    </state>
+    <state x="1101" y="121" width="672" height="678" key="search.everywhere.popup/0.27.1920.773@0.27.1920.773" timestamp="1601323360615" />
+  </component>
+</project>
