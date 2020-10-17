@@ -13,9 +13,6 @@ type Robot struct {
 
 var seededRand *rand.Rand = rand.New(rand.NewSource(time.Now().UnixNano()))
 
-const charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-const numberset = "0123456789"
-
 var usedNames = map[string]bool{}
 
 // Name generates a name for the given robot while verifying that
@@ -43,9 +40,9 @@ func generateName() string {
 	b := make([]byte, 5)
 	for i := 0; i < 5; i++ {
 		if i < 2 {
-			b[i] = charset[seededRand.Intn(len(charset))]
+			b[i] = byte(seededRand.Intn(26) + 'A')
 		} else {
-			b[i] = numberset[seededRand.Intn(len(numberset))]
+			b[i] = byte(seededRand.Intn(10) + '0')
 		}
 	}
 	return string(b)
