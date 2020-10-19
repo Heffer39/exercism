@@ -11,18 +11,17 @@ type Robot struct {
 	name string
 }
 
-var seededRand *rand.Rand = rand.New(rand.NewSource(time.Now().UnixNano()))
+var seededRand = rand.New(rand.NewSource(time.Now().UnixNano()))
 
 var usedNames = map[string]bool{}
 
 // Name generates a name for the given robot while verifying that
 // the randomly generated name hasn't been duplicated and all names have not been assigned
 func (r *Robot) Name() (string, error) {
-	if len(usedNames) == 26*26*10*10*10 {
-		return "", errors.New("all possible names have been used")
-	}
-
 	if r.name == "" {
+		if len(usedNames) == 26*26*10*10*10 {
+			return "", errors.New("all possible names have been used")
+		}
 		r.name = generateName()
 		for usedNames[r.name] {
 			r.name = generateName()
