@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4186753-10d6-4067-a84c-b015243caaa7" name="Default Changelist" comment="" />
+    <list default="true" id="c4186753-10d6-4067-a84c-b015243caaa7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tournament.go" beforeDir="false" afterPath="$PROJECT_DIR$/tournament.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603307528553</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial Solution&#10;&#10;With comments">
+      <created>1603367993377</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603367993377</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,7 +110,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Final Solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final Solution" />
+    <MESSAGE value="Initial Solution&#10;&#10;With comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Solution&#10;&#10;With comments" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -110,22 +121,22 @@
       <screen x="0" y="27" width="1920" height="773" />
     </state>
     <state x="844" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.773@0.27.1920.773" timestamp="1603329489266" />
-    <state width="906" height="179" key="GridCell.Tab.0.bottom" timestamp="1603367823023">
+    <state width="1878" height="179" key="GridCell.Tab.0.bottom" timestamp="1603369247811">
       <screen x="0" y="27" width="1920" height="773" />
     </state>
-    <state width="906" height="179" key="GridCell.Tab.0.bottom/0.27.1920.773@0.27.1920.773" timestamp="1603367823023" />
-    <state width="906" height="179" key="GridCell.Tab.0.center" timestamp="1603367823023">
+    <state width="1878" height="179" key="GridCell.Tab.0.bottom/0.27.1920.773@0.27.1920.773" timestamp="1603369247811" />
+    <state width="1878" height="179" key="GridCell.Tab.0.center" timestamp="1603369247811">
       <screen x="0" y="27" width="1920" height="773" />
     </state>
-    <state width="906" height="179" key="GridCell.Tab.0.center/0.27.1920.773@0.27.1920.773" timestamp="1603367823023" />
-    <state width="906" height="179" key="GridCell.Tab.0.left" timestamp="1603367823023">
+    <state width="1878" height="179" key="GridCell.Tab.0.center/0.27.1920.773@0.27.1920.773" timestamp="1603369247811" />
+    <state width="1878" height="179" key="GridCell.Tab.0.left" timestamp="1603369247811">
       <screen x="0" y="27" width="1920" height="773" />
     </state>
-    <state width="906" height="179" key="GridCell.Tab.0.left/0.27.1920.773@0.27.1920.773" timestamp="1603367823023" />
-    <state width="906" height="179" key="GridCell.Tab.0.right" timestamp="1603367823023">
+    <state width="1878" height="179" key="GridCell.Tab.0.left/0.27.1920.773@0.27.1920.773" timestamp="1603369247811" />
+    <state width="1878" height="179" key="GridCell.Tab.0.right" timestamp="1603369247811">
       <screen x="0" y="27" width="1920" height="773" />
     </state>
-    <state width="906" height="179" key="GridCell.Tab.0.right/0.27.1920.773@0.27.1920.773" timestamp="1603367823023" />
+    <state width="1878" height="179" key="GridCell.Tab.0.right/0.27.1920.773@0.27.1920.773" timestamp="1603369247811" />
     <state x="1036" y="151" width="800" height="539" key="Vcs.Push.Dialog.v2" timestamp="1603307540314">
       <screen x="0" y="27" width="1920" height="773" />
     </state>
