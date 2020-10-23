@@ -20,12 +20,12 @@ type team struct {
 	points        int
 }
 
-var teamsInTournament map[string]*team
+var teamsInTournament map[string]team
 
 // Tally reads in an input file, calculates the match results, and writes back
 // the results to the io.Writer
 func Tally(r io.Reader, w io.Writer) error {
-	teamsInTournament = make(map[string]*team)
+	teamsInTournament = make(map[string]team)
 	scanner := bufio.NewScanner(r)
 
 	for scanner.Scan() {
@@ -52,43 +52,41 @@ func Tally(r io.Reader, w io.Writer) error {
 
 // calculateMatchResults updates the stats for each team, based on the provided match information
 func calculateMatchResults(s []string) error {
-	if _, ok := teamsInTournament[s[0]]; !ok {
-		teamsInTournament[s[0]] = &team{name: s[0]}
-	}
-	if _, ok := teamsInTournament[s[1]]; !ok {
-		teamsInTournament[s[1]] = &team{name: s[1]}
-	}
-
 	if s[0] == s[1] {
 		return errors.New("team cannot play itself")
 	}
 
+	a, b := teamsInTournament[s[0]], teamsInTournament[s[1]]
+	a.name, b.name = s[0], s[1]
+
 	switch s[2] {
 	case "draw":
-		teamsInTournament[s[0]].matchesPlayed++
-		teamsInTournament[s[0]].draws++
-		teamsInTournament[s[0]].points++
+		a.matchesPlayed++
+		a.draws++
+		a.points++
 
-		teamsInTournament[s[1]].matchesPlayed++
-		teamsInTournament[s[1]].draws++
-		teamsInTournament[s[1]].points++
+		b.matchesPlayed++
+		b.draws++
+		b.points++
 	case "win":
-		teamsInTournament[s[0]].matchesPlayed++
-		teamsInTournament[s[0]].wins++
-		teamsInTournament[s[0]].points += 3
+		a.matchesPlayed++
+		a.wins++
+		a.points += 3
 
-		teamsInTournament[s[1]].matchesPlayed++
-		teamsInTournament[s[1]].losses++
+		b.matchesPlayed++
+		b.losses++
 	case "loss":
-		teamsInTournament[s[0]].matchesPlayed++
-		teamsInTournament[s[0]].losses++
+		a.matchesPlayed++
+		a.losses++
 
-		teamsInTournament[s[1]].matchesPlayed++
-		teamsInTournament[s[1]].wins++
-		teamsInTournament[s[1]].points += 3
+		b.matchesPlayed++
+		b.wins++
+		b.points += 3
 	default:
 		return errors.New("incorrect input")
 	}
+
+	teamsInTournament[a.name], teamsInTournament[b.name] = a, b
 	return nil
 }
 
@@ -98,7 +96,7 @@ func calculateMatchResults(s []string) error {
 func sortedTeamList() []team {
 	var teams []team
 	for _, value := range teamsInTournament {
-		teams = append(teams, *value)
+		teams = append(teams, value)
 	}
 
 	sort.Slice(teams, func(i, j int) bool {

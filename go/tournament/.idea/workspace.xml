@@ -91,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603367993377</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial Submission&#10;&#10;Introduced new sortedTeamList function&#10;Added comments&#10;General cleanup">
+      <created>1603369389418</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603369389418</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,11 +114,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Final Solution" />
     <MESSAGE value="Initial Solution&#10;&#10;With comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Solution&#10;&#10;With comments" />
+    <MESSAGE value="Initial Submission&#10;&#10;Introduced new sortedTeamList function&#10;Added comments&#10;General cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Submission&#10;&#10;Introduced new sortedTeamList function&#10;Added comments&#10;General cleanup" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -121,25 +130,25 @@
       <screen x="0" y="27" width="1920" height="773" />
     </state>
     <state x="844" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.773@0.27.1920.773" timestamp="1603329489266" />
-    <state width="1878" height="179" key="GridCell.Tab.0.bottom" timestamp="1603369247811">
+    <state width="906" height="172" key="GridCell.Tab.0.bottom" timestamp="1603473685956">
       <screen x="0" y="27" width="1920" height="773" />
     </state>
-    <state width="1878" height="179" key="GridCell.Tab.0.bottom/0.27.1920.773@0.27.1920.773" timestamp="1603369247811" />
-    <state width="1878" height="179" key="GridCell.Tab.0.center" timestamp="1603369247811">
+    <state width="906" height="172" key="GridCell.Tab.0.bottom/0.27.1920.773@0.27.1920.773" timestamp="1603473685956" />
+    <state width="906" height="172" key="GridCell.Tab.0.center" timestamp="1603473685955">
       <screen x="0" y="27" width="1920" height="773" />
     </state>
-    <state width="1878" height="179" key="GridCell.Tab.0.center/0.27.1920.773@0.27.1920.773" timestamp="1603369247811" />
-    <state width="1878" height="179" key="GridCell.Tab.0.left" timestamp="1603369247811">
+    <state width="906" height="172" key="GridCell.Tab.0.center/0.27.1920.773@0.27.1920.773" timestamp="1603473685955" />
+    <state width="906" height="172" key="GridCell.Tab.0.left" timestamp="1603473685955">
       <screen x="0" y="27" width="1920" height="773" />
     </state>
-    <state width="1878" height="179" key="GridCell.Tab.0.left/0.27.1920.773@0.27.1920.773" timestamp="1603369247811" />
-    <state width="1878" height="179" key="GridCell.Tab.0.right" timestamp="1603369247811">
+    <state width="906" height="172" key="GridCell.Tab.0.left/0.27.1920.773@0.27.1920.773" timestamp="1603473685955" />
+    <state width="906" height="172" key="GridCell.Tab.0.right" timestamp="1603473685956">
       <screen x="0" y="27" width="1920" height="773" />
     </state>
-    <state width="1878" height="179" key="GridCell.Tab.0.right/0.27.1920.773@0.27.1920.773" timestamp="1603369247811" />
-    <state x="1036" y="151" width="800" height="539" key="Vcs.Push.Dialog.v2" timestamp="1603307540314">
+    <state width="906" height="172" key="GridCell.Tab.0.right/0.27.1920.773@0.27.1920.773" timestamp="1603473685956" />
+    <state x="1036" y="147" width="800" height="539" key="Vcs.Push.Dialog.v2" timestamp="1603369410185">
       <screen x="0" y="27" width="1920" height="773" />
     </state>
-    <state x="1036" y="151" width="800" height="539" key="Vcs.Push.Dialog.v2/0.27.1920.773@0.27.1920.773" timestamp="1603307540314" />
+    <state x="1036" y="147" width="800" height="539" key="Vcs.Push.Dialog.v2/0.27.1920.773@0.27.1920.773" timestamp="1603369410185" />
   </component>
 </project>
