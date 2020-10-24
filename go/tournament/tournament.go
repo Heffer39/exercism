@@ -20,18 +20,18 @@ type team struct {
 	points        int
 }
 
-var teamsInTournament map[string]team
+var teams map[string]team
 
 // Tally reads in an input file, calculates the match results, and writes back
 // the results to the io.Writer
 func Tally(r io.Reader, w io.Writer) error {
-	teamsInTournament = make(map[string]team)
+	teams = make(map[string]team)
 	scanner := bufio.NewScanner(r)
 
 	for scanner.Scan() {
-		s := strings.SplitN(scanner.Text(), ";", 3)
+		s := strings.Split(scanner.Text(), ";")
 		if len(s) != 3 && len(s) > 1 {
-			return errors.New("incorrect size")
+			return fmt.Errorf("bad line format %q: expected 'teamA;teamB;result'", s)
 		}
 		if len(s) == 3 {
 			if err := calculateMatchResults(s); err != nil {
@@ -43,8 +43,8 @@ func Tally(r io.Reader, w io.Writer) error {
 		return err
 	}
 
-	teamsList := sortedTeamList()
-	if _, err := w.Write([]byte(printResults(teamsList))); err != nil {
+	sortedTeams := sortedTeamList()
+	if _, err := fmt.Fprintf(w, printResults(sortedTeams)); err != nil {
 		return err
 	}
 	return nil
@@ -56,7 +56,7 @@ func calculateMatchResults(s []string) error {
 		return errors.New("team cannot play itself")
 	}
 
-	a, b := teamsInTournament[s[0]], teamsInTournament[s[1]]
+	a, b := teams[s[0]], teams[s[1]]
 	a.name, b.name = s[0], s[1]
 
 	switch s[2] {
@@ -86,7 +86,7 @@ func calculateMatchResults(s []string) error {
 		return errors.New("incorrect input")
 	}
 
-	teamsInTournament[a.name], teamsInTournament[b.name] = a, b
+	teams[a.name], teams[b.name] = a, b
 	return nil
 }
 
@@ -94,19 +94,19 @@ func calculateMatchResults(s []string) error {
 // Teams are sorted by points
 // If teams are tied on points, they are instead sorted alphabetically
 func sortedTeamList() []team {
-	var teams []team
-	for _, value := range teamsInTournament {
-		teams = append(teams, value)
+	var sortedTeams []team
+	for _, value := range teams {
+		sortedTeams = append(sortedTeams, value)
 	}
 
-	sort.Slice(teams, func(i, j int) bool {
-		if teams[i].points == teams[j].points {
-			return teams[i].name < teams[j].name
+	sort.Slice(sortedTeams, func(i, j int) bool {
+		if sortedTeams[i].points == sortedTeams[j].points {
+			return sortedTeams[i].name < sortedTeams[j].name
 		}
-		return teams[i].points > teams[j].points
+		return sortedTeams[i].points > sortedTeams[j].points
 	})
 
-	return teams
+	return sortedTeams
 }
 
 // printResults returns a formatted string, displaying the tabular data of each team and their stats
