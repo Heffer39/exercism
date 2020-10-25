@@ -30,7 +30,10 @@ func Tally(r io.Reader, w io.Writer) error {
 
 	for scanner.Scan() {
 		s := strings.Split(scanner.Text(), ";")
-		if len(s) != 3 && len(s) > 1 {
+		if s[0] == "" || strings.HasPrefix(s[0], "#") {
+			continue
+		}
+		if len(s) != 3 {
 			return fmt.Errorf("bad line format %q: expected 'teamA;teamB;result'", s)
 		}
 		if len(s) == 3 {
@@ -44,18 +47,12 @@ func Tally(r io.Reader, w io.Writer) error {
 	}
 
 	sortedTeams := sortedTeamList()
-	if _, err := fmt.Fprintf(w, printResults(sortedTeams)); err != nil {
-		return err
-	}
+	printResults(sortedTeams, w)
 	return nil
 }
 
 // calculateMatchResults updates the stats for each team, based on the provided match information
 func calculateMatchResults(s []string) error {
-	if s[0] == s[1] {
-		return errors.New("team cannot play itself")
-	}
-
 	a, b := teams[s[0]], teams[s[1]]
 	a.name, b.name = s[0], s[1]
 
@@ -109,24 +106,17 @@ func sortedTeamList() []team {
 	return sortedTeams
 }
 
-// printResults returns a formatted string, displaying the tabular data of each team and their stats
-func printResults(teams []team) string {
-	var result strings.Builder
-
-	result.WriteString(
-		fmt.Sprintf("%-31s| MP |  W |  D |  L |  P\n", "Team"),
-	)
+// printResults writes the results to the io.Writer, displaying the tabular data of each team and their stats
+func printResults(teams []team, w io.Writer) {
+	fmt.Fprintf(w, "%-31s| MP |  W |  D |  L |  P\n", "Team")
 
 	for _, team := range teams {
-		s := fmt.Sprintf("%-31s| %2d | %2d | %2d | %2d | %2d\n",
+		fmt.Fprintf(w, "%-31s| %2d | %2d | %2d | %2d | %2d\n",
 			team.name,
 			team.matchesPlayed,
 			team.wins,
 			team.draws,
 			team.losses,
 			team.points)
-		result.WriteString(s)
 	}
-
-	return result.String()
 }
