@@ -120,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603632814010</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Concise challenge&#10;&#10;Reduced file by 22 LOC. Goal is 20 LOC, still above 60.&#10;Currently stumped.">
+      <created>1603730734972</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1603730734972</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +152,8 @@
     <MESSAGE value="Refactored calculateMatchResults&#10;&#10;Changed the teamsInTournament map to store a team as a value, instead of *team" />
     <MESSAGE value="Additional feedback&#10;&#10;Using strings.Split instead of strings.SplitN&#10;Using fmt.Errorf instead of errors.New&#10;Changed teamsInTournament name to teams&#10;Changed teams name in sortedTeamList to sortedTeams&#10;Using fmt.Fprintf to write to io.Writer instead of w.Write" />
     <MESSAGE value="Third round of feedback&#10;&#10;Explicitly call out blank and commented lines for clarity&#10;Removed &quot;team cannot play itself&quot; error check&#10;Changed printResults method to write directly to io.Writer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Third round of feedback&#10;&#10;Explicitly call out blank and commented lines for clarity&#10;Removed &quot;team cannot play itself&quot; error check&#10;Changed printResults method to write directly to io.Writer" />
+    <MESSAGE value="Concise challenge&#10;&#10;Reduced file by 22 LOC. Goal is 20 LOC, still above 60.&#10;Currently stumped." />
+    <option name="LAST_COMMIT_MESSAGE" value="Concise challenge&#10;&#10;Reduced file by 22 LOC. Goal is 20 LOC, still above 60.&#10;Currently stumped." />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -155,30 +163,30 @@
       <screen x="0" y="27" width="1920" height="773" />
     </state>
     <state x="844" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.773@0.27.1920.773" timestamp="1603329489266" />
-    <state x="1442" y="31" width="470" height="761" maximized="true" key="DiffContextDialog" timestamp="1603729585255">
+    <state x="8" y="31" width="470" height="761" maximized="true" key="DiffContextDialog" timestamp="1603735853797">
       <screen x="0" y="27" width="1920" height="773" />
     </state>
-    <state x="1442" y="31" width="470" height="761" maximized="true" key="DiffContextDialog/0.27.1920.773@0.27.1920.773" timestamp="1603729585255" />
+    <state x="8" y="31" width="470" height="761" maximized="true" key="DiffContextDialog/0.27.1920.773@0.27.1920.773" timestamp="1603735853797" />
     <state x="1224" y="165" width="424" height="495" key="FileChooserDialogImpl" timestamp="1603633513797">
       <screen x="0" y="27" width="1920" height="773" />
     </state>
     <state x="1224" y="165" width="424" height="495" key="FileChooserDialogImpl/0.27.1920.773@0.27.1920.773" timestamp="1603633513797" />
-    <state width="1878" height="172" key="GridCell.Tab.0.bottom" timestamp="1603729360739">
+    <state width="906" height="167" key="GridCell.Tab.0.bottom" timestamp="1603735640752">
       <screen x="0" y="27" width="1920" height="773" />
     </state>
-    <state width="1878" height="172" key="GridCell.Tab.0.bottom/0.27.1920.773@0.27.1920.773" timestamp="1603729360739" />
-    <state width="1878" height="172" key="GridCell.Tab.0.center" timestamp="1603729360738">
+    <state width="906" height="167" key="GridCell.Tab.0.bottom/0.27.1920.773@0.27.1920.773" timestamp="1603735640752" />
+    <state width="906" height="167" key="GridCell.Tab.0.center" timestamp="1603735640752">
       <screen x="0" y="27" width="1920" height="773" />
     </state>
-    <state width="1878" height="172" key="GridCell.Tab.0.center/0.27.1920.773@0.27.1920.773" timestamp="1603729360738" />
-    <state width="1878" height="172" key="GridCell.Tab.0.left" timestamp="1603729360738">
+    <state width="906" height="167" key="GridCell.Tab.0.center/0.27.1920.773@0.27.1920.773" timestamp="1603735640752" />
+    <state width="906" height="167" key="GridCell.Tab.0.left" timestamp="1603735640752">
       <screen x="0" y="27" width="1920" height="773" />
     </state>
-    <state width="1878" height="172" key="GridCell.Tab.0.left/0.27.1920.773@0.27.1920.773" timestamp="1603729360738" />
-    <state width="1878" height="172" key="GridCell.Tab.0.right" timestamp="1603729360738">
+    <state width="906" height="167" key="GridCell.Tab.0.left/0.27.1920.773@0.27.1920.773" timestamp="1603735640752" />
+    <state width="906" height="167" key="GridCell.Tab.0.right" timestamp="1603735640752">
       <screen x="0" y="27" width="1920" height="773" />
     </state>
-    <state width="1878" height="172" key="GridCell.Tab.0.right/0.27.1920.773@0.27.1920.773" timestamp="1603729360738" />
+    <state width="906" height="167" key="GridCell.Tab.0.right/0.27.1920.773@0.27.1920.773" timestamp="1603735640752" />
     <state x="1036" y="143" width="800" height="539" key="Vcs.Push.Dialog.v2" timestamp="1603632846046">
       <screen x="0" y="27" width="1920" height="773" />
     </state>
