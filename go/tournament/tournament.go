@@ -3,7 +3,6 @@ package tournament
 
 import (
 	"bufio"
-	"errors"
 	"fmt"
 	"io"
 	"sort"
@@ -36,18 +35,12 @@ func Tally(r io.Reader, w io.Writer) error {
 		if len(s) != 3 {
 			return fmt.Errorf("bad line format %q: expected 'teamA;teamB;result'", s)
 		}
-		if len(s) == 3 {
-			if err := calculateMatchResults(s); err != nil {
-				return err
-			}
+		if err := calculateMatchResults(s); err != nil {
+			return err
 		}
 	}
-	if err := scanner.Err(); err != nil {
-		return err
-	}
 
-	sortedTeams := sortedTeamList()
-	printResults(sortedTeams, w)
+	printResults(sortedTeamList(), w)
 	return nil
 }
 
@@ -58,29 +51,16 @@ func calculateMatchResults(s []string) error {
 
 	switch s[2] {
 	case "draw":
-		a.matchesPlayed++
-		a.draws++
-		a.points++
-
-		b.matchesPlayed++
-		b.draws++
-		b.points++
+		a.matchesPlayed, a.draws, a.points = a.matchesPlayed+1, a.draws+1, a.points+1
+		b.matchesPlayed, b.draws, b.points = b.matchesPlayed+1, b.draws+1, b.points+1
 	case "win":
-		a.matchesPlayed++
-		a.wins++
-		a.points += 3
-
-		b.matchesPlayed++
-		b.losses++
+		a.matchesPlayed, a.wins, a.points = a.matchesPlayed+1, a.wins+1, a.points+3
+		b.matchesPlayed, b.losses = b.matchesPlayed+1, b.losses+1
 	case "loss":
-		a.matchesPlayed++
-		a.losses++
-
-		b.matchesPlayed++
-		b.wins++
-		b.points += 3
+		a.matchesPlayed, a.losses = a.matchesPlayed+1, a.losses+1
+		b.matchesPlayed, b.wins, b.points = b.matchesPlayed+1, b.wins+1, b.points+3
 	default:
-		return errors.New("incorrect input")
+		return fmt.Errorf("incorrect input")
 	}
 
 	teams[a.name], teams[b.name] = a, b
@@ -111,12 +91,6 @@ func printResults(teams []team, w io.Writer) {
 	fmt.Fprintf(w, "%-31s| MP |  W |  D |  L |  P\n", "Team")
 
 	for _, team := range teams {
-		fmt.Fprintf(w, "%-31s| %2d | %2d | %2d | %2d | %2d\n",
-			team.name,
-			team.matchesPlayed,
-			team.wins,
-			team.draws,
-			team.losses,
-			team.points)
+		fmt.Fprintf(w, "%-31s| %2d | %2d | %2d | %2d | %2d\n", team.name, team.matchesPlayed, team.wins, team.draws, team.losses, team.points)
 	}
 }
