@@ -15,12 +15,10 @@ type team struct {
 	matchesPlayed, wins, draws, losses, points int
 }
 
-var teams map[string]team
-
 // Tally reads in an input file, calculates the match results, sorts the results, and writes back
 // the results to the io.Writer
 func Tally(r io.Reader, w io.Writer) error {
-	teams = make(map[string]team)
+	teams := make(map[string]team)
 	scanner := bufio.NewScanner(r)
 	for scanner.Scan() {
 		s := strings.Split(scanner.Text(), ";")
@@ -32,22 +30,28 @@ func Tally(r io.Reader, w io.Writer) error {
 		}
 		a, b := teams[s[0]], teams[s[1]]
 		a.name, b.name = s[0], s[1]
+		a.matchesPlayed++
+		b.matchesPlayed++
 		switch s[2] {
 		case "draw":
-			a.matchesPlayed, a.draws, a.points = a.matchesPlayed+1, a.draws+1, a.points+1
-			b.matchesPlayed, b.draws, b.points = b.matchesPlayed+1, b.draws+1, b.points+1
+			a.draws++
+			a.points++
+			b.draws++
+			b.points++
 		case "win":
-			a.matchesPlayed, a.wins, a.points = a.matchesPlayed+1, a.wins+1, a.points+3
-			b.matchesPlayed, b.losses = b.matchesPlayed+1, b.losses+1
+			a.wins++
+			a.points += 3
+			b.losses++
 		case "loss":
-			a.matchesPlayed, a.losses = a.matchesPlayed+1, a.losses+1
-			b.matchesPlayed, b.wins, b.points = b.matchesPlayed+1, b.wins+1, b.points+3
+			a.losses++
+			b.wins++
+			b.points += 3
 		default:
 			return fmt.Errorf("incorrect input")
 		}
 		teams[a.name], teams[b.name] = a, b
 	}
-	var sortedTeams []team
+	sortedTeams := make([]team, 0, len(teams))
 	for _, value := range teams {
 		sortedTeams = append(sortedTeams, value)
 	}
