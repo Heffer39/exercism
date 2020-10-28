@@ -1,58 +1,47 @@
+// Package romannumerals converts normal numbers to Roman Numerals
 package romannumerals
 
-var romanNumeralsMap = map[int]string{
-	1:    "I",
-	5:    "V",
-	10:   "X",
-	50:   "L",
-	100:  "C",
-	500:  "D",
-	1000: "M",
+import (
+	"fmt"
+	"strings"
+)
+
+// This map of romanNumerals stores all the mappings we need to represent Roman Numerals
+// up to 3000
+var romanNumerals = []romanNumeral{
+	{"M", 1000},
+	{"CM", 900},
+	{"D", 500},
+	{"CD", 400},
+	{"C", 100},
+	{"XC", 90},
+	{"L", 50},
+	{"XL", 40},
+	{"X", 10},
+	{"IX", 9},
+	{"V", 5},
+	{"IV", 4},
+	{"I", 1},
 }
 
-func ToRomanNumeral(arabic int) (string, bool){
-	var romanNumeral = ""
-	for arabic > 0 {
-
-		arabic, romanNumeral = romanNumeralCount(arabic, 1000)
-		arabic, romanNumeral = romanNumeralCount(arabic, 500)
-		arabic, romanNumeral = romanNumeralCount(arabic, 100)
-		arabic, romanNumeral = romanNumeralCount(arabic, 50)
-		arabic, romanNumeral = romanNumeralCount(arabic, 10)
-		arabic, romanNumeral = romanNumeralCount(arabic, 5)
-		arabic, romanNumeral = romanNumeralCount(arabic, 1)
-
-		/*
-		if arabic >= 1000 {
-			count := arabic / 1000
-			for i := 0; i < count ; i++ {
-				romanNumeral += "M"
-				arabic -= 1000
-			}
-		} else if arabic >= 500 {
-			count := arabic / 500
-			for i := 0; i < count ; i++ {
-				romanNumeral += "D"
-				arabic -= 500
-			}
-		}
-		 */
-	}
-
-	return romanNumeral, false
+// romanNumeral stores the association between a Roman Numeral and it's corresponding
+// Arabic number
+type romanNumeral struct {
+	character string
+	value     int
 }
 
-func romanNumeralCount(arabic int, value int) (int, string) {
-	var romanNumeral = ""
-	var letter = romanNumeralsMap[arabic]
-
-	if arabic >= value {
-		count := arabic / value
-		for i := 0; i < count ; i++ {
-			romanNumeral += letter
-			arabic -= value
-		}
+// ToRomanNumeral converts a Roman Numeral into it's Arabic representation as a string
+func ToRomanNumeral(arabic int) (string, error) {
+	if arabic > 3000 || arabic <= 0 {
+		return "", fmt.Errorf("unhandled inputs")
 	}
-
-	return arabic, romanNumeral
+	var result strings.Builder
+	for _, v := range romanNumerals {
+		diff := arabic / v.value
+		s := strings.Repeat(v.character, diff)
+		result.WriteString(s)
+		arabic = arabic % v.value
+	}
+	return result.String(), nil
 }
