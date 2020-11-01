@@ -20,11 +20,7 @@ var verses = []string{
 
 // Song returns a string of all twelve verses, for each day in the twelve days of christmas song
 func Song() string {
-	var v []string
-	for i := 1; i <= 12; i++ {
-		v = append(v, Verse(i))
-	}
-	return strings.Join(v, "\n")
+	return strings.Join(verses, "\n")
 }
 
 // Verse returns a string of the verse for a specific day in the twelve days of christmas song
